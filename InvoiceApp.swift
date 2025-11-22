@@ -15,7 +15,7 @@ struct InvoiceApp: App {
     // Bu container, uygulama boyunca veri modelimizi yönetecek
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            // Buraya Invoice modeli eklenecek (Adım 2'de)
+            Invoice.self  // Invoice modelini SwiftData schema'sına ekliyoruz
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
