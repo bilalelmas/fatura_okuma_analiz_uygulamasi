@@ -3,29 +3,118 @@
 //  Fatura Okuma ve Harcama Takip
 //
 //  Ana içerik görünümü
-//  Şimdilik placeholder olarak kullanılıyor, ileride ana ekran buraya eklenecek
+//  Kamera butonu ve fatura listesi burada yer alır
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
+    // MARK: - Properties
+    
+    /// SwiftData model context'i (Invoice kaydetmek için)
+    @Environment(\.modelContext) private var modelContext
+    
+    /// Kamera ViewModel'i
+    @StateObject private var cameraViewModel = CameraViewModel()
+    
+    /// Kamera görünümünün gösterilip gösterilmeyeceği
+    @State private var showCamera = false
+    
+    // MARK: - Body
+    
     var body: some View {
-        VStack {
-            Image(systemName: "doc.text.magnifyingglass")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("E-Arşiv Fatura Okuma")
-                .font(.title)
-                .padding()
-            Text("Uygulama hazırlanıyor...")
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
+        NavigationStack {
+            VStack(spacing: 30) {
+                // Logo ve başlık
+                VStack(spacing: 16) {
+                    Image(systemName: "doc.text.magnifyingglass")
+                        .imageScale(.large)
+                        .foregroundStyle(.tint)
+                        .font(.system(size: 60))
+                    
+                    Text("E-Arşiv Fatura Okuma")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    
+                    Text("Faturanızı çekin, otomatik olarak analiz edelim")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal)
+                }
+                .padding(.top, 40)
+                
+                Spacer()
+                
+                // Kamera butonu
+                Button(action: {
+                    // VNDocumentCameraViewController'ın kullanılabilir olup olmadığını kontrol ediyoruz
+                    if VNDocumentCameraViewController.isSupported {
+                        showCamera = true
+                    } else {
+                        // Cihaz kamera desteklemiyorsa kullanıcıya bilgi veriyoruz
+                        cameraViewModel.state = .error("Bu cihaz doküman tarama özelliğini desteklemiyor.")
+                    }
+                }) {
+                    HStack {
+                        Image(systemName: "camera.fill")
+                            .font(.title2)
+                        Text("Fatura Çek")
+                            .font(.headline)
+                    }
+                    .foregroundColor(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.blue)
+                    .cornerRadius(12)
+                }
+                .padding(.horizontal, 40)
+                .padding(.bottom, 40)
+                
+                // İşlem durumu gösterimi
+                if case .processing = cameraViewModel.state {
+                    ProgressView("Fatura işleniyor...")
+                        .padding()
+                } else if case .success = cameraViewModel.state {
+                    Label("Fatura başarıyla kaydedildi!", systemImage: "checkmark.circle.fill")
+                        .foregroundColor(.green)
+                        .padding()
+                        .onAppear {
+                            // 2 saniye sonra durumu sıfırlıyoruz
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                cameraViewModel.reset()
+                            }
+                        }
+                } else if case .error(let message) = cameraViewModel.state {
+                    Label(message, systemImage: "exclamationmark.triangle.fill")
+                        .foregroundColor(.red)
+                        .padding()
+                        .multilineTextAlignment(.center)
+                }
+            }
+            .navigationTitle("Fatura Takip")
+            .sheet(isPresented: $showCamera) {
+                // Kamera görünümünü sheet olarak gösteriyoruz
+                DocumentCameraView(
+                    onDocumentScanned: { image in
+                        // Görsel çekildiğinde işleme gönderiyoruz
+                        Task {
+                            await cameraViewModel.processImage(image, modelContext: modelContext)
+                        }
+                    },
+                    onCancel: {
+                        // Kullanıcı kamerayı iptal ettiğinde
+                        cameraViewModel.reset()
+                    }
+                )
+            }
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+        .modelContainer(for: Invoice.self, inMemory: true)
 }
 
