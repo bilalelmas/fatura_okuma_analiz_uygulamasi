@@ -28,11 +28,22 @@ fatura_okuma_analiz_uygulamasi/
 ## 🚀 Geliştirme Planı
 
 1. ✅ **Kurulum:** Proje yapısı ve klasörler
-2. ⏳ **Model:** Invoice veri modeli (SwiftData)
-3. ⏳ **Servis 1:** OCRService (Vision Framework)
-4. ⏳ **Servis 2:** InvoiceParser (Regex & Pattern Matching)
-5. ⏳ **UI - Kamera:** VNDocumentCameraViewController entegrasyonu
-6. ⏳ **UI - Liste & Detay:** Fatura listesi ve düzenleme ekranları
+2. ✅ **Model:** Invoice veri modeli (SwiftData)
+3. ✅ **Servis 1:** OCRService (Vision Framework)
+4. ✅ **Servis 2:** InvoiceParser (Regex & Pattern Matching)
+5. ✅ **UI - Kamera:** VNDocumentCameraViewController entegrasyonu
+6. ✅ **UI - Liste & Detay:** Fatura listesi ve düzenleme ekranları
 7. ⏳ **Grafikler:** SwiftCharts ile harcama analizi
+
+## 🧪 Test Etme
+
+Uygulamayı test etmek için detaylı rehbere bakın: **[TEST_REHBERI.md](./TEST_REHBERI.md)**
+
+### Hızlı Başlangıç
+
+1. Xcode'da yeni bir iOS App projesi oluşturun (SwiftUI + SwiftData)
+2. Bu repository'deki dosyaları Xcode projesine ekleyin
+3. Kamera izinlerini Info.plist'e ekleyin
+4. Gerçek bir iOS cihazında çalıştırın (VisionKit simülatörde çalışmaz)
 
 

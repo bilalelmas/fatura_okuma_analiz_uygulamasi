@@ -39,6 +39,12 @@ struct ContentView: View {
             .tabItem {
                 Label("Faturalar", systemImage: "list.bullet")
             }
+            
+            // Analiz Tab
+            InvoiceAnalysisView()
+                .tabItem {
+                    Label("Analiz", systemImage: "chart.pie.fill")
+                }
         }
         .sheet(isPresented: $showCamera) {
             // Kamera görünümünü sheet olarak gösteriyoruz
