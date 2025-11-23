@@ -3,11 +3,12 @@
 //  Fatura Okuma ve Harcama Takip
 //
 //  Ana içerik görünümü
-//  Kamera butonu ve fatura listesi burada yer alır
+//  TabView ile ana ekran ve fatura listesi arasında geçiş sağlar
 //
 
 import SwiftUI
 import SwiftData
+import VisionKit
 
 struct ContentView: View {
     // MARK: - Properties
@@ -24,6 +25,42 @@ struct ContentView: View {
     // MARK: - Body
     
     var body: some View {
+        TabView {
+            // Ana Ekran Tab
+            homeTab
+                .tabItem {
+                    Label("Ana Sayfa", systemImage: "house.fill")
+                }
+            
+            // Fatura Listesi Tab
+            NavigationStack {
+                InvoiceListView()
+            }
+            .tabItem {
+                Label("Faturalar", systemImage: "list.bullet")
+            }
+        }
+        .sheet(isPresented: $showCamera) {
+            // Kamera görünümünü sheet olarak gösteriyoruz
+            DocumentCameraView(
+                onDocumentScanned: { image in
+                    // Görsel çekildiğinde işleme gönderiyoruz
+                    Task {
+                        await cameraViewModel.processImage(image, modelContext: modelContext)
+                    }
+                },
+                onCancel: {
+                    // Kullanıcı kamerayı iptal ettiğinde
+                    cameraViewModel.reset()
+                }
+            )
+        }
+    }
+    
+    // MARK: - Home Tab
+    
+    /// Ana ekran tab'ı
+    private var homeTab: some View {
         NavigationStack {
             VStack(spacing: 30) {
                 // Logo ve başlık
@@ -94,21 +131,6 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Fatura Takip")
-            .sheet(isPresented: $showCamera) {
-                // Kamera görünümünü sheet olarak gösteriyoruz
-                DocumentCameraView(
-                    onDocumentScanned: { image in
-                        // Görsel çekildiğinde işleme gönderiyoruz
-                        Task {
-                            await cameraViewModel.processImage(image, modelContext: modelContext)
-                        }
-                    },
-                    onCancel: {
-                        // Kullanıcı kamerayı iptal ettiğinde
-                        cameraViewModel.reset()
-                    }
-                )
-            }
         }
     }
 }
