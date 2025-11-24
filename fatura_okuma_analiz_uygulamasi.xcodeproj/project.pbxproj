@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXContainerItemProxy section */
+		74467DC02ED470EB00DE2AA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74467DA82ED470EA00DE2AA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74467DAF2ED470EA00DE2AA1;
+			remoteInfo = fatura_okuma_analiz_uygulamasi;
+		};
+		74467DCA2ED470EB00DE2AA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 74467DA82ED470EA00DE2AA1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74467DAF2ED470EA00DE2AA1;
+			remoteInfo = fatura_okuma_analiz_uygulamasi;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		74467DB02ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fatura_okuma_analiz_uygulamasi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74467DBF2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fatura_okuma_analiz_uygulamasiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74467DC92ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fatura_okuma_analiz_uygulamasiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		74467DB22ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = fatura_okuma_analiz_uygulamasi;
+			sourceTree = "<group>";
+		};
+		74467DC22ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = fatura_okuma_analiz_uygulamasiTests;
+			sourceTree = "<group>";
+		};
+		74467DCC2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = fatura_okuma_analiz_uygulamasiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74467DAD2ED470EA00DE2AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74467DBC2ED470EB00DE2AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74467DC62ED470EB00DE2AA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74467DA72ED470EA00DE2AA1 = {
+			isa = PBXGroup;
+			children = (
+				74467DB22ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi */,
+				74467DC22ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests */,
+				74467DCC2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests */,
+				74467DB12ED470EA00DE2AA1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74467DB12ED470EA00DE2AA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74467DB02ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi.app */,
+				74467DBF2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests.xctest */,
+				74467DC92ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74467DAF2ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74467DD32ED470EB00DE2AA1 /* Build configuration list for PBXNativeTarget "fatura_okuma_analiz_uygulamasi" */;
+			buildPhases = (
+				74467DAC2ED470EA00DE2AA1 /* Sources */,
+				74467DAD2ED470EA00DE2AA1 /* Frameworks */,
+				74467DAE2ED470EA00DE2AA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				74467DB22ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi */,
+			);
+			name = fatura_okuma_analiz_uygulamasi;
+			packageProductDependencies = (
+			);
+			productName = fatura_okuma_analiz_uygulamasi;
+			productReference = 74467DB02ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		74467DBE2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74467DD62ED470EB00DE2AA1 /* Build configuration list for PBXNativeTarget "fatura_okuma_analiz_uygulamasiTests" */;
+			buildPhases = (
+				74467DBB2ED470EB00DE2AA1 /* Sources */,
+				74467DBC2ED470EB00DE2AA1 /* Frameworks */,
+				74467DBD2ED470EB00DE2AA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74467DC12ED470EB00DE2AA1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				74467DC22ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests */,
+			);
+			name = fatura_okuma_analiz_uygulamasiTests;
+			packageProductDependencies = (
+			);
+			productName = fatura_okuma_analiz_uygulamasiTests;
+			productReference = 74467DBF2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		74467DC82ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74467DD92ED470EB00DE2AA1 /* Build configuration list for PBXNativeTarget "fatura_okuma_analiz_uygulamasiUITests" */;
+			buildPhases = (
+				74467DC52ED470EB00DE2AA1 /* Sources */,
+				74467DC62ED470EB00DE2AA1 /* Frameworks */,
+				74467DC72ED470EB00DE2AA1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74467DCB2ED470EB00DE2AA1 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				74467DCC2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests */,
+			);
+			name = fatura_okuma_analiz_uygulamasiUITests;
+			packageProductDependencies = (
+			);
+			productName = fatura_okuma_analiz_uygulamasiUITests;
+			productReference = 74467DC92ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74467DA82ED470EA00DE2AA1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					74467DAF2ED470EA00DE2AA1 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					74467DBE2ED470EB00DE2AA1 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 74467DAF2ED470EA00DE2AA1;
+					};
+					74467DC82ED470EB00DE2AA1 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 74467DAF2ED470EA00DE2AA1;
+					};
+				};
+			};
+			buildConfigurationList = 74467DAB2ED470EA00DE2AA1 /* Build configuration list for PBXProject "fatura_okuma_analiz_uygulamasi" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74467DA72ED470EA00DE2AA1;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 74467DB12ED470EA00DE2AA1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74467DAF2ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi */,
+				74467DBE2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests */,
+				74467DC82ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74467DAE2ED470EA00DE2AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74467DBD2ED470EB00DE2AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74467DC72ED470EB00DE2AA1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74467DAC2ED470EA00DE2AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74467DBB2ED470EB00DE2AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74467DC52ED470EB00DE2AA1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74467DC12ED470EB00DE2AA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74467DAF2ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi */;
+			targetProxy = 74467DC02ED470EB00DE2AA1 /* PBXContainerItemProxy */;
+		};
+		74467DCB2ED470EB00DE2AA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74467DAF2ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi */;
+			targetProxy = 74467DCA2ED470EB00DE2AA1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		74467DD12ED470EB00DE2AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 2TPHQV67NJ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74467DD22ED470EB00DE2AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 2TPHQV67NJ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		74467DD42ED470EB00DE2AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2TPHQV67NJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Fatura taramak ve metin okumak için kamera izni gereklidir.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bilalelmas.fatura-okuma-analiz-uygulamasi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74467DD52ED470EB00DE2AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2TPHQV67NJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Fatura taramak ve metin okumak için kamera izni gereklidir.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bilalelmas.fatura-okuma-analiz-uygulamasi";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		74467DD72ED470EB00DE2AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2TPHQV67NJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bilalelmas.fatura-okuma-analiz-uygulamasiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fatura_okuma_analiz_uygulamasi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fatura_okuma_analiz_uygulamasi";
+			};
+			name = Debug;
+		};
+		74467DD82ED470EB00DE2AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2TPHQV67NJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bilalelmas.fatura-okuma-analiz-uygulamasiTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/fatura_okuma_analiz_uygulamasi.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/fatura_okuma_analiz_uygulamasi";
+			};
+			name = Release;
+		};
+		74467DDA2ED470EB00DE2AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2TPHQV67NJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bilalelmas.fatura-okuma-analiz-uygulamasiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fatura_okuma_analiz_uygulamasi;
+			};
+			name = Debug;
+		};
+		74467DDB2ED470EB00DE2AA1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2TPHQV67NJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.bilalelmas.fatura-okuma-analiz-uygulamasiUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = fatura_okuma_analiz_uygulamasi;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74467DAB2ED470EA00DE2AA1 /* Build configuration list for PBXProject "fatura_okuma_analiz_uygulamasi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74467DD12ED470EB00DE2AA1 /* Debug */,
+				74467DD22ED470EB00DE2AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74467DD32ED470EB00DE2AA1 /* Build configuration list for PBXNativeTarget "fatura_okuma_analiz_uygulamasi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74467DD42ED470EB00DE2AA1 /* Debug */,
+				74467DD52ED470EB00DE2AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74467DD62ED470EB00DE2AA1 /* Build configuration list for PBXNativeTarget "fatura_okuma_analiz_uygulamasiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74467DD72ED470EB00DE2AA1 /* Debug */,
+				74467DD82ED470EB00DE2AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74467DD92ED470EB00DE2AA1 /* Build configuration list for PBXNativeTarget "fatura_okuma_analiz_uygulamasiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74467DDA2ED470EB00DE2AA1 /* Debug */,
+				74467DDB2ED470EB00DE2AA1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 74467DA82ED470EA00DE2AA1 /* Project object */;
+}

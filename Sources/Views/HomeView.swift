@@ -32,7 +32,7 @@ struct HomeView: View {
             // Ana Ekran Tab
             homeTab
                 .tabItem {
-                    Label("Ana Sayfa", systemImage: "house.fill")
+                    Label(Constants.Strings.homeTab, systemImage: Constants.Icons.house)
                 }
             
             // Fatura Listesi Tab
@@ -40,13 +40,13 @@ struct HomeView: View {
                 InvoiceListView()
             }
             .tabItem {
-                Label("Faturalar", systemImage: "list.bullet")
+                Label(Constants.Strings.invoicesTab, systemImage: Constants.Icons.list)
             }
             
             // Analiz Tab
             InvoiceAnalysisView()
                 .tabItem {
-                    Label("Analiz", systemImage: "chart.pie.fill")
+                    Label(Constants.Strings.analysisTab, systemImage: Constants.Icons.chart)
                 }
         }
         .sheet(isPresented: $showCamera) {
@@ -81,16 +81,16 @@ struct HomeView: View {
             VStack(spacing: 30) {
                 // Logo ve başlık
                 VStack(spacing: 16) {
-                    Image(systemName: "doc.text.magnifyingglass")
+                    Image(systemName: Constants.Icons.document)
                         .imageScale(.large)
                         .foregroundStyle(.tint)
                         .font(.system(size: 60))
                     
-                    Text("E-Arşiv Fatura Okuma")
+                    Text(Constants.Strings.appTitle)
                         .font(.title)
                         .fontWeight(.bold)
                     
-                    Text("Faturanızı çekin, otomatik olarak analiz edelim")
+                    Text(Constants.Strings.appSubtitle)
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
@@ -102,67 +102,66 @@ struct HomeView: View {
                 
                 // Kamera butonu
                 Button(action: {
+                    HapticManager.shared.light()
                     // VNDocumentCameraViewController'ın kullanılabilir olup olmadığını kontrol ediyoruz
                     if VNDocumentCameraViewController.isSupported {
                         showCamera = true
                     } else {
                         // Cihaz kamera desteklemiyorsa kullanıcıya bilgi veriyoruz
+                        HapticManager.shared.error()
                         cameraViewModel.state = .error("Bu cihaz doküman tarama özelliğini desteklemiyor.")
                     }
                 }) {
                     HStack {
-                        Image(systemName: "camera.fill")
+                        Image(systemName: Constants.Icons.camera)
                             .font(.title2)
-                        Text("Fatura Çek")
+                        Text(Constants.Strings.scanInvoiceButton)
                             .font(.headline)
                     }
-                    .foregroundColor(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.blue)
-                    .cornerRadius(12)
+                    .primaryButtonStyle()
                 }
 
-                .padding(.horizontal, 40)
+                .padding(.horizontal, Constants.Layout.horizontalPadding)
                 
                 // Dosya Yükle butonu
                 Button(action: {
+                    HapticManager.shared.light()
                     showDocumentPicker = true
                 }) {
                     HStack {
-                        Image(systemName: "folder.fill")
+                        Image(systemName: Constants.Icons.folder)
                             .font(.title2)
-                        Text("Dosya Yükle")
+                        Text(Constants.Strings.uploadFileButton)
                             .font(.headline)
                     }
-                    .foregroundColor(.blue)
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.blue.opacity(0.1))
-                    .cornerRadius(12)
+                    .secondaryButtonStyle()
                 }
-                .padding(.horizontal, 40)
-                .padding(.bottom, 40)
+                .padding(.horizontal, Constants.Layout.horizontalPadding)
+                .padding(.bottom, Constants.Layout.horizontalPadding)
                 
                 // İşlem durumu gösterimi
                 if case .processing = cameraViewModel.state {
-                    ProgressView("Fatura işleniyor...")
+                    ProgressView(Constants.Strings.processingMessage)
                         .padding()
                 } else if case .success = cameraViewModel.state {
-                    Label("Fatura başarıyla kaydedildi!", systemImage: "checkmark.circle.fill")
-                        .foregroundColor(.green)
+                    Label(Constants.Strings.successMessage, systemImage: Constants.Icons.checkmark)
+                        .foregroundColor(Constants.Colors.successGreen)
                         .padding()
                         .onAppear {
-                            // 2 saniye sonra durumu sıfırlıyoruz
-                            DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                            HapticManager.shared.success()
+                            // Başarı mesajı gösterim süresi sonra durumu sıfırlıyoruz
+                            DispatchQueue.main.asyncAfter(deadline: .now() + Constants.Time.successMessageDuration) {
                                 cameraViewModel.reset()
                             }
                         }
                 } else if case .error(let message) = cameraViewModel.state {
-                    Label(message, systemImage: "exclamationmark.triangle.fill")
-                        .foregroundColor(.red)
+                    Label(message, systemImage: Constants.Icons.error)
+                        .foregroundColor(Constants.Colors.errorRed)
                         .padding()
                         .multilineTextAlignment(.center)
+                        .onAppear {
+                            HapticManager.shared.error()
+                        }
                 }
             }
             .navigationTitle("Fatura Takip")

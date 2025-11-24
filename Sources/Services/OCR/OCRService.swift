@@ -11,27 +11,6 @@ import UIKit
 import Vision
 import PDFKit
 
-/// OCR işlemleri sırasında oluşabilecek hatalar
-enum OCRServiceError: LocalizedError {
-    case invalidImage
-    case invalidPDF
-    case recognitionFailed
-    case noTextFound
-    
-    var errorDescription: String? {
-        switch self {
-        case .invalidImage:
-            return "Geçersiz görsel dosyası"
-        case .invalidPDF:
-            return "Geçersiz PDF dosyası"
-        case .recognitionFailed:
-            return "Metin tanıma işlemi başarısız oldu"
-        case .noTextFound:
-            return "Görselde metin bulunamadı"
-        }
-    }
-}
-
 /// OCR Servisi - Vision Framework kullanarak metin okuma
 /// Singleton pattern kullanılarak oluşturulmuştur
 class OCRService {
@@ -53,7 +32,7 @@ class OCRService {
     func recognizeText(from image: UIImage) async throws -> String {
         // UIImage'i CIImage'e dönüştürüyoruz
         guard let cgImage = image.cgImage else {
-            throw OCRServiceError.invalidImage
+            throw InvoiceError.invalidImage
         }
         
         // Vision Framework'ün metin tanıma request'ini oluşturuyoruz
@@ -80,13 +59,13 @@ class OCRService {
                 
                 // Sonuçları alıyoruz
                 guard let observations = request.results else {
-                    continuation.resume(throwing: OCRServiceError.recognitionFailed)
+                    continuation.resume(throwing: InvoiceError.ocrFailed("Metin tanıma sonuçları alınamadı"))
                     return
                 }
                 
                 // Eğer hiç metin bulunamadıysa hata fırlatıyoruz
                 guard !observations.isEmpty else {
-                    continuation.resume(throwing: OCRServiceError.noTextFound)
+                    continuation.resume(throwing: InvoiceError.noTextFound)
                     return
                 }
                 
@@ -102,7 +81,7 @@ class OCRService {
                 
             } catch {
                 // Hata durumunda hatayı fırlatıyoruz
-                continuation.resume(throwing: OCRServiceError.recognitionFailed)
+                continuation.resume(throwing: InvoiceError.ocrFailed(error.localizedDescription))
             }
         }
     }
@@ -119,7 +98,7 @@ class OCRService {
         
         // PDF değilse UIImage olarak deniyoruz
         guard let image = UIImage(data: data) else {
-            throw OCRServiceError.invalidImage
+            throw InvoiceError.invalidImage
         }
         
         return try await recognizeText(from: image)
@@ -132,7 +111,7 @@ class OCRService {
     func recognizeText(from pdfDocument: PDFDocument) async throws -> String {
         // PDF'in sayfa sayısını kontrol ediyoruz
         guard pdfDocument.pageCount > 0 else {
-            throw OCRServiceError.invalidPDF
+            throw InvoiceError.invalidPDF
         }
         
         var allText: [String] = []
@@ -166,7 +145,7 @@ class OCRService {
         
         // Eğer hiç metin bulunamadıysa hata fırlatıyoruz
         guard !allText.isEmpty else {
-            throw OCRServiceError.noTextFound
+            throw InvoiceError.noTextFound
         }
         
         // Tüm sayfalardan okunan metinleri birleştirip döndürüyoruz
