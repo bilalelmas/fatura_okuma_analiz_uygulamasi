@@ -22,6 +22,9 @@ struct ContentView: View {
     /// Kamera görünümünün gösterilip gösterilmeyeceği
     @State private var showCamera = false
     
+    /// Dosya seçicinin gösterilip gösterilmeyeceği
+    @State private var showDocumentPicker = false
+    
     // MARK: - Body
     
     var body: some View {
@@ -60,6 +63,13 @@ struct ContentView: View {
                     cameraViewModel.reset()
                 }
             )
+        }
+        .sheet(isPresented: $showDocumentPicker) {
+            DocumentPicker { url in
+                Task {
+                    await cameraViewModel.processFile(url, modelContext: modelContext)
+                }
+            }
         }
     }
     
@@ -110,6 +120,25 @@ struct ContentView: View {
                     .frame(maxWidth: .infinity)
                     .padding()
                     .background(Color.blue)
+                    .cornerRadius(12)
+                }
+
+                .padding(.horizontal, 40)
+                
+                // Dosya Yükle butonu
+                Button(action: {
+                    showDocumentPicker = true
+                }) {
+                    HStack {
+                        Image(systemName: "folder.fill")
+                            .font(.title2)
+                        Text("Dosya Yükle")
+                            .font(.headline)
+                    }
+                    .foregroundColor(.blue)
+                    .frame(maxWidth: .infinity)
+                    .padding()
+                    .background(Color.blue.opacity(0.1))
                     .cornerRadius(12)
                 }
                 .padding(.horizontal, 40)

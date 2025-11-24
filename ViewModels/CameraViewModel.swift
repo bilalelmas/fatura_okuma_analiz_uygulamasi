@@ -88,6 +88,68 @@ class CameraViewModel: ObservableObject {
         }
     }
     
+    /// Dosyadan (PDF/Resim) fatura işler
+    /// - Parameters:
+    ///   - url: Dosya URL'i
+    ///   - modelContext: SwiftData model context'i
+    func processFile(_ url: URL, modelContext: ModelContext) async {
+        // İşlem başladı
+        state = .processing
+        
+        // Dosya erişim izni alıyoruz (Security Scoped Resource)
+        let accessing = url.startAccessingSecurityScopedResource()
+        defer {
+            if accessing {
+                url.stopAccessingSecurityScopedResource()
+            }
+        }
+        
+        do {
+            // Dosya verisini okuyoruz
+            let data = try Data(contentsOf: url)
+            
+            // Önizleme için görsel oluşturmaya çalışıyoruz
+            if let image = UIImage(data: data) {
+                capturedImage = image
+            } else {
+                // PDF ise ilk sayfasını önizleme yapabiliriz (opsiyonel)
+                // Şimdilik sadece ikon gösteriyoruz
+                capturedImage = UIImage(systemName: "doc.text.fill")
+            }
+            
+            // 1. OCR ile metni okuyoruz
+            let ocrText = try await ocrService.recognizeText(from: data)
+            print("OCR Metni (Dosya): \(ocrText)")
+            
+            // 2. Parser ile anlamlı verileri çıkarıyoruz
+            let parsedData = parser.parse(ocrText)
+            
+            // 3. Kontrol
+            guard parsedData.isValid else {
+                state = .error("Dosyadan fatura bilgileri çıkarılamadı.")
+                return
+            }
+            
+            // 4. Invoice oluşturuyoruz
+            let invoice = Invoice(
+                invoiceNumber: parsedData.invoiceNumber ?? "Bilinmeyen",
+                date: parsedData.date ?? Date(),
+                totalAmount: parsedData.totalAmount ?? 0.0,
+                taxAmount: parsedData.taxAmount ?? 0.0,
+                companyName: parsedData.companyName ?? "Bilinmeyen Firma",
+                imageData: data, // Orijinal dosya verisini saklıyoruz
+                fileType: url.pathExtension.uppercased()
+            )
+            
+            // 5. Kayıt
+            modelContext.insert(invoice)
+            state = .success
+            
+        } catch {
+            state = .error("Dosya işleme hatası: \(error.localizedDescription)")
+        }
+    }
+    
     /// Durumu sıfırlar (yeni çekim için)
     func reset() {
         state = .idle
