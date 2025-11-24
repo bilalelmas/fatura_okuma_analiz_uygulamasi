@@ -1,6 +1,6 @@
 //
-//  InvoiceApp.swift
-//  Fatura Okuma ve Harcama Takip
+//  fatura_okuma_analiz_uygulamasiApp.swift
+//  fatura_okuma_analiz_uygulamasi
 //
 //  Ana uygulama giriş noktası
 //  SwiftUI App lifecycle kullanılarak oluşturulmuştur
@@ -10,7 +10,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct InvoiceApp: App {
+struct fatura_okuma_analiz_uygulamasiApp: App {
     // SwiftData için model container'ı oluşturuyoruz
     // Bu container, uygulama boyunca veri modelimizi yönetecek
     var sharedModelContainer: ModelContainer = {
@@ -34,4 +34,3 @@ struct InvoiceApp: App {
         .modelContainer(sharedModelContainer)
     }
 }
-

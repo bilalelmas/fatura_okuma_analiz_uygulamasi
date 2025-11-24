@@ -262,7 +262,7 @@ struct InfoRow: View {
         self.label = label
         self.value = value
         self.isEditable = isEditable
-        self.editedValue = editedValue
+        self._editedValue = editedValue
     }
     
     var body: some View {

@@ -79,7 +79,7 @@ class OCRService {
                 try handler.perform([request])
                 
                 // Sonuçları alıyoruz
-                guard let observations = request.results as? [VNRecognizedTextObservation] else {
+                guard let observations = request.results else {
                     continuation.resume(throwing: OCRServiceError.recognitionFailed)
                     return
                 }

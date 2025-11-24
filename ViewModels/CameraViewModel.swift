@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 import SwiftData
+import Combine
 
 /// Kamera işlemlerinin durumları
 enum CameraProcessingState {
