@@ -6,6 +6,34 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		74FF97602ED495040003ED88 /* TEST_REHBERI.md in Resources */ = {isa = PBXBuildFile; fileRef = 74FF975F2ED495040003ED88 /* TEST_REHBERI.md */; };
+		74FF97612ED495040003ED88 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 74FF97432ED495040003ED88 /* README.md */; };
+		74FF97622ED495040003ED88 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 74FF97422ED495040003ED88 /* LICENSE */; };
+		74FF97632ED495040003ED88 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF97592ED495040003ED88 /* HomeView.swift */; };
+		74FF97642ED495040003ED88 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF974B2ED495040003ED88 /* Invoice.swift */; };
+		74FF97652ED495040003ED88 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF97522ED495040003ED88 /* Constants.swift */; };
+		74FF97662ED495040003ED88 /* Invoice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF97482ED495040003ED88 /* Invoice+Extensions.swift */; };
+		74FF97672ED495040003ED88 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF97492ED495040003ED88 /* View+Extensions.swift */; };
+		74FF97682ED495040003ED88 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF97552ED495040003ED88 /* CameraViewModel.swift */; };
+		74FF97692ED495040003ED88 /* InvoiceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF975C2ED495040003ED88 /* InvoiceListView.swift */; };
+		74FF976A2ED495040003ED88 /* InvoiceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF975B2ED495040003ED88 /* InvoiceDetailView.swift */; };
+		74FF976B2ED495040003ED88 /* InvoiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF97462ED495040003ED88 /* InvoiceError.swift */; };
+		74FF976C2ED495040003ED88 /* InvoiceParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF974F2ED495040003ED88 /* InvoiceParser.swift */; };
+		74FF976D2ED495040003ED88 /* InvoiceAnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF975A2ED495040003ED88 /* InvoiceAnalysisView.swift */; };
+		74FF976E2ED495040003ED88 /* ExpenseTrackerOCRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF97442ED495040003ED88 /* ExpenseTrackerOCRApp.swift */; };
+		74FF976F2ED495040003ED88 /* OCRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF974D2ED495040003ED88 /* OCRService.swift */; };
+		74FF97702ED495040003ED88 /* DocumentPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF97582ED495040003ED88 /* DocumentPicker.swift */; };
+		74FF97712ED495040003ED88 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF97532ED495040003ED88 /* HapticManager.swift */; };
+		74FF97722ED495040003ED88 /* DocumentCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF97572ED495040003ED88 /* DocumentCameraView.swift */; };
+		74FF98C72ED4953D0003ED88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74FF986D2ED4953D0003ED88 /* Assets.xcassets */; };
+		74FF99092ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF986F2ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiTests.swift */; };
+		74FF990A2ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF98742ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiUITestsLaunchTests.swift */; };
+		74FF990B2ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF98732ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiUITests.swift */; };
+		74FF990C2ED4953D0003ED88 /* InvoiceParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF98702ED4953D0003ED88 /* InvoiceParserTests.swift */; };
+		74FF990D2ED4953D0003ED88 /* InvoiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF98712ED4953D0003ED88 /* InvoiceTests.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		74467DC02ED470EB00DE2AA1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,28 +52,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		74467DB02ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fatura_okuma_analiz_uygulamasi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		74467DBF2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fatura_okuma_analiz_uygulamasiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		74467DC92ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fatura_okuma_analiz_uygulamasiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		74467DB02ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = fatura_okuma_analiz_uygulamasi.app; path = "/Users/bilalelmas/GitHub/fatura_okuma_analiz_uygulamasi/build/Debug-iphoneos/fatura_okuma_analiz_uygulamasi.app"; sourceTree = "<absolute>"; };
+		74467DBF2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = fatura_okuma_analiz_uygulamasiTests.xctest; path = "/Users/bilalelmas/GitHub/fatura_okuma_analiz_uygulamasi/build/Debug-iphoneos/fatura_okuma_analiz_uygulamasi.app/PlugIns/fatura_okuma_analiz_uygulamasiTests.xctest"; sourceTree = "<absolute>"; };
+		74467DC92ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = fatura_okuma_analiz_uygulamasiUITests.xctest; path = "/Users/bilalelmas/GitHub/fatura_okuma_analiz_uygulamasi/build/Debug-iphoneos/fatura_okuma_analiz_uygulamasiUITests-Runner.app/PlugIns/fatura_okuma_analiz_uygulamasiUITests.xctest"; sourceTree = "<absolute>"; };
+		74FF97422ED495040003ED88 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		74FF97432ED495040003ED88 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		74FF97442ED495040003ED88 /* ExpenseTrackerOCRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerOCRApp.swift; sourceTree = "<group>"; };
+		74FF97462ED495040003ED88 /* InvoiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceError.swift; sourceTree = "<group>"; };
+		74FF97482ED495040003ED88 /* Invoice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Invoice+Extensions.swift"; sourceTree = "<group>"; };
+		74FF97492ED495040003ED88 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		74FF974B2ED495040003ED88 /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		74FF974D2ED495040003ED88 /* OCRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRService.swift; sourceTree = "<group>"; };
+		74FF974F2ED495040003ED88 /* InvoiceParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceParser.swift; sourceTree = "<group>"; };
+		74FF97522ED495040003ED88 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		74FF97532ED495040003ED88 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		74FF97552ED495040003ED88 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
+		74FF97572ED495040003ED88 /* DocumentCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentCameraView.swift; sourceTree = "<group>"; };
+		74FF97582ED495040003ED88 /* DocumentPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPicker.swift; sourceTree = "<group>"; };
+		74FF97592ED495040003ED88 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		74FF975A2ED495040003ED88 /* InvoiceAnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceAnalysisView.swift; sourceTree = "<group>"; };
+		74FF975B2ED495040003ED88 /* InvoiceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceDetailView.swift; sourceTree = "<group>"; };
+		74FF975C2ED495040003ED88 /* InvoiceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceListView.swift; sourceTree = "<group>"; };
+		74FF975F2ED495040003ED88 /* TEST_REHBERI.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TEST_REHBERI.md; sourceTree = "<group>"; };
+		74FF986D2ED4953D0003ED88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74FF986E2ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = fatura_okuma_analiz_uygulamasi.xcodeproj; sourceTree = "<group>"; };
+		74FF986F2ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fatura_okuma_analiz_uygulamasiTests.swift; sourceTree = "<group>"; };
+		74FF98702ED4953D0003ED88 /* InvoiceParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceParserTests.swift; sourceTree = "<group>"; };
+		74FF98712ED4953D0003ED88 /* InvoiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceTests.swift; sourceTree = "<group>"; };
+		74FF98732ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fatura_okuma_analiz_uygulamasiUITests.swift; sourceTree = "<group>"; };
+		74FF98742ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fatura_okuma_analiz_uygulamasiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		74467DB22ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = fatura_okuma_analiz_uygulamasi;
-			sourceTree = "<group>";
-		};
-		74467DC22ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = fatura_okuma_analiz_uygulamasiTests;
-			sourceTree = "<group>";
-		};
-		74467DCC2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = fatura_okuma_analiz_uygulamasiUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		74467DAD2ED470EA00DE2AA1 /* Frameworks */ = {
@@ -75,20 +111,141 @@
 		74467DA72ED470EA00DE2AA1 = {
 			isa = PBXGroup;
 			children = (
-				74467DB22ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi */,
-				74467DC22ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests */,
-				74467DCC2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests */,
-				74467DB12ED470EA00DE2AA1 /* Products */,
+				74FF97422ED495040003ED88 /* LICENSE */,
+				74FF97432ED495040003ED88 /* README.md */,
+				74FF975E2ED495040003ED88 /* Sources */,
+				74FF975F2ED495040003ED88 /* TEST_REHBERI.md */,
+				74FF986D2ED4953D0003ED88 /* Assets.xcassets */,
+				74FF986E2ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasi.xcodeproj */,
+				74FF98722ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiTests */,
+				74FF98752ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiUITests */,
 			);
 			sourceTree = "<group>";
 		};
-		74467DB12ED470EA00DE2AA1 /* Products */ = {
+		74FF97452ED495040003ED88 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				74467DB02ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi.app */,
-				74467DBF2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests.xctest */,
-				74467DC92ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests.xctest */,
+				74FF97442ED495040003ED88 /* ExpenseTrackerOCRApp.swift */,
 			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		74FF97472ED495040003ED88 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				74FF97462ED495040003ED88 /* InvoiceError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		74FF974A2ED495040003ED88 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74FF97482ED495040003ED88 /* Invoice+Extensions.swift */,
+				74FF97492ED495040003ED88 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		74FF974C2ED495040003ED88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74FF974B2ED495040003ED88 /* Invoice.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		74FF974E2ED495040003ED88 /* OCR */ = {
+			isa = PBXGroup;
+			children = (
+				74FF974D2ED495040003ED88 /* OCRService.swift */,
+			);
+			path = OCR;
+			sourceTree = "<group>";
+		};
+		74FF97502ED495040003ED88 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				74FF974F2ED495040003ED88 /* InvoiceParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		74FF97512ED495040003ED88 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				74FF974E2ED495040003ED88 /* OCR */,
+				74FF97502ED495040003ED88 /* Parser */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		74FF97542ED495040003ED88 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				74FF97522ED495040003ED88 /* Constants.swift */,
+				74FF97532ED495040003ED88 /* HapticManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		74FF97562ED495040003ED88 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				74FF97552ED495040003ED88 /* CameraViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		74FF975D2ED495040003ED88 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74FF97572ED495040003ED88 /* DocumentCameraView.swift */,
+				74FF97582ED495040003ED88 /* DocumentPicker.swift */,
+				74FF97592ED495040003ED88 /* HomeView.swift */,
+				74FF975A2ED495040003ED88 /* InvoiceAnalysisView.swift */,
+				74FF975B2ED495040003ED88 /* InvoiceDetailView.swift */,
+				74FF975C2ED495040003ED88 /* InvoiceListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		74FF975E2ED495040003ED88 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				74FF97452ED495040003ED88 /* App */,
+				74FF97472ED495040003ED88 /* Errors */,
+				74FF974A2ED495040003ED88 /* Extensions */,
+				74FF974C2ED495040003ED88 /* Models */,
+				74FF97512ED495040003ED88 /* Services */,
+				74FF97542ED495040003ED88 /* Utilities */,
+				74FF97562ED495040003ED88 /* ViewModels */,
+				74FF975D2ED495040003ED88 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		74FF98722ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiTests */ = {
+			isa = PBXGroup;
+			children = (
+				74FF986F2ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiTests.swift */,
+				74FF98702ED4953D0003ED88 /* InvoiceParserTests.swift */,
+				74FF98712ED4953D0003ED88 /* InvoiceTests.swift */,
+			);
+			path = fatura_okuma_analiz_uygulamasiTests;
+			sourceTree = "<group>";
+		};
+		74FF98752ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				74FF98732ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiUITests.swift */,
+				74FF98742ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiUITestsLaunchTests.swift */,
+			);
+			path = fatura_okuma_analiz_uygulamasiUITests;
+			sourceTree = "<group>";
+		};
+		74FF98762ED4953D0003ED88 /* Products */ = {
+			isa = PBXGroup;
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -106,9 +263,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				74467DB22ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi */,
 			);
 			name = fatura_okuma_analiz_uygulamasi;
 			packageProductDependencies = (
@@ -130,9 +284,6 @@
 			dependencies = (
 				74467DC12ED470EB00DE2AA1 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				74467DC22ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiTests */,
-			);
 			name = fatura_okuma_analiz_uygulamasiTests;
 			packageProductDependencies = (
 			);
@@ -152,9 +303,6 @@
 			);
 			dependencies = (
 				74467DCB2ED470EB00DE2AA1 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				74467DCC2ED470EB00DE2AA1 /* fatura_okuma_analiz_uygulamasiUITests */,
 			);
 			name = fatura_okuma_analiz_uygulamasiUITests;
 			packageProductDependencies = (
@@ -196,8 +344,14 @@
 			mainGroup = 74467DA72ED470EA00DE2AA1;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 74467DB12ED470EA00DE2AA1 /* Products */;
+			productRefGroup = 74467DA72ED470EA00DE2AA1;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 74FF98762ED4953D0003ED88 /* Products */;
+					ProjectRef = 74FF986E2ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasi.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				74467DAF2ED470EA00DE2AA1 /* fatura_okuma_analiz_uygulamasi */,
@@ -212,6 +366,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74FF97602ED495040003ED88 /* TEST_REHBERI.md in Resources */,
+				74FF97612ED495040003ED88 /* README.md in Resources */,
+				74FF97622ED495040003ED88 /* LICENSE in Resources */,
+				74FF98C72ED4953D0003ED88 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +394,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74FF97632ED495040003ED88 /* HomeView.swift in Sources */,
+				74FF97642ED495040003ED88 /* Invoice.swift in Sources */,
+				74FF97652ED495040003ED88 /* Constants.swift in Sources */,
+				74FF97662ED495040003ED88 /* Invoice+Extensions.swift in Sources */,
+				74FF97672ED495040003ED88 /* View+Extensions.swift in Sources */,
+				74FF97682ED495040003ED88 /* CameraViewModel.swift in Sources */,
+				74FF97692ED495040003ED88 /* InvoiceListView.swift in Sources */,
+				74FF976A2ED495040003ED88 /* InvoiceDetailView.swift in Sources */,
+				74FF99092ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiTests.swift in Sources */,
+				74FF990A2ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiUITestsLaunchTests.swift in Sources */,
+				74FF990B2ED4953D0003ED88 /* fatura_okuma_analiz_uygulamasiUITests.swift in Sources */,
+				74FF990C2ED4953D0003ED88 /* InvoiceParserTests.swift in Sources */,
+				74FF990D2ED4953D0003ED88 /* InvoiceTests.swift in Sources */,
+				74FF976B2ED495040003ED88 /* InvoiceError.swift in Sources */,
+				74FF976C2ED495040003ED88 /* InvoiceParser.swift in Sources */,
+				74FF976D2ED495040003ED88 /* InvoiceAnalysisView.swift in Sources */,
+				74FF976E2ED495040003ED88 /* ExpenseTrackerOCRApp.swift in Sources */,
+				74FF976F2ED495040003ED88 /* OCRService.swift in Sources */,
+				74FF97702ED495040003ED88 /* DocumentPicker.swift in Sources */,
+				74FF97712ED495040003ED88 /* HapticManager.swift in Sources */,
+				74FF97722ED495040003ED88 /* DocumentCameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

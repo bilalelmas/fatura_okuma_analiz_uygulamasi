@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ExpenseTrackerOCR
+@testable import fatura_okuma_analiz_uygulamasi
 
 final class InvoiceTests: XCTestCase {
     
