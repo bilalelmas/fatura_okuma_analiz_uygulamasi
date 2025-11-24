@@ -16,24 +16,29 @@ Bu proje, **Bilgisayar Mühendisliği Bitirme Tezi** kapsamında geliştirilen b
 ## 📁 Proje Yapısı
 
 ```
-fatura_okuma_analiz_uygulamasi/
-├── Models/          # Veri modelleri (Invoice, vb.)
-├── Views/           # SwiftUI görünümleri
-├── ViewModels/      # MVVM ViewModel'leri
-├── Services/        # İş mantığı servisleri (OCR, Parser)
-├── Resources/       # Assets, Localization
-└── Utilities/       # Yardımcı fonksiyonlar
+ExpenseTrackerOCR/
+├── Sources/
+│   ├── App/                 # ExpenseTrackerOCRApp giriş noktası
+│   ├── Models/              # SwiftData modelleri (Invoice, vb.)
+│   ├── ViewModels/          # MVVM ViewModel'leri
+│   ├── Views/               # SwiftUI ekranları (Home, List, Detail...)
+│   ├── Services/
+│   │   ├── OCR/             # Vision tabanlı OCR servisleri
+│   │   └── Parser/          # Regex + patterns.json ayrıştırıcıları
+│   └── Utilities/           # Ortak yardımcılar
+├── Resources/               # Assets, JSON pattern'ları
+└── Tests/                   # Unit/UI test hedefleri
 ```
 
 ## 🚀 Geliştirme Planı
 
-1. ✅ **Kurulum:** Proje yapısı ve klasörler
-2. ✅ **Model:** Invoice veri modeli (SwiftData)
-3. ✅ **Servis 1:** OCRService (Vision Framework)
-4. ✅ **Servis 2:** InvoiceParser (Regex & Pattern Matching)
-5. ✅ **UI - Kamera:** VNDocumentCameraViewController entegrasyonu
-6. ✅ **UI - Liste & Detay:** Fatura listesi ve düzenleme ekranları
-7. ⏳ **Grafikler:** SwiftCharts ile harcama analizi
+1. ✅ **Kurulum & Mimari:** Xcode projesi + MVVM klasörleri
+2. ⏳ **Veri Modeli:** SwiftData `Invoice`
+3. ⏳ **Servis (OCR):** `OCRService` + Vision
+4. ⏳ **Servis (Parser):** `InvoiceParser` + Regex
+5. ⏳ **UI - Tarama:** `VNDocumentCameraViewController`
+6. ⏳ **UI - Liste & Detay:** Fatura yönetimi ekranları
+7. ⏳ **Analiz & Grafikler:** SwiftCharts harcama analizi
 
 ## 🧪 Test Etme
 

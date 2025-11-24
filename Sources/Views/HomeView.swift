@@ -1,6 +1,6 @@
 //
-//  ContentView.swift
-//  Fatura Okuma ve Harcama Takip
+//  HomeView.swift
+//  ExpenseTrackerOCR
 //
 //  Ana içerik görünümü
 //  TabView ile ana ekran ve fatura listesi arasında geçiş sağlar
@@ -10,7 +10,7 @@ import SwiftUI
 import SwiftData
 import VisionKit
 
-struct ContentView: View {
+struct HomeView: View {
     // MARK: - Properties
     
     /// SwiftData model context'i (Invoice kaydetmek için)
@@ -171,7 +171,7 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    HomeView()
         .modelContainer(for: Invoice.self, inMemory: true)
 }
 
